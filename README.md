@@ -1,7 +1,7 @@
 # hcam
 ![Android](https://img.shields.io/badge/Android-11%2B-brightgreen?logo=android&logoColor=white) ![Version](https://img.shields.io/github/v/release/arash-samadi/hcam?label=Version&color=blue)
 ![License](https://img.shields.io/github/license/arash-samadi/hcam?color=blue)  
-a camera app that has the processing of the htc inspire 4g reverse engineered and based on lineage Apache it is **currently alpha**
+a camera app that has the processing of the htc inspire 4g reverse engineered and based on lineage Apache it is **currently beta**
 # installation
 [<img src="https://raw.githubusercontent.com/rubenpgrady/get-it-on-github/refs/heads/main/get-it-on-github.png" height="65">](https://github.com/arash-samadi/hcam/releases)  
 fair warning expect bugs 
@@ -9,7 +9,7 @@ fair warning expect bugs
 - android 11+
 - camera2 compatible
 ## status
-**project is still in alpha dont expect much**
+**project is still in beta dont expect much**
 **app just works it isn't aesthetic yet**
 ### Working
 - [x] Front/rear cameras
