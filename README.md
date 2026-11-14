@@ -22,7 +22,7 @@ fair warning expect bugs
 ### Incomplete / Not Working
 - [ ] Depth of Field, Fisheye, Dots and Tilt-shift
 - [ ] Auto-enhance (NR/LightBoost unverified)
-- [ ] HTC ISP and color science
+- [ ] color science
 - [ ] HTC video processing
 - [ ] Lens selection
 
