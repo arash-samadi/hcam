@@ -1,0 +1,4 @@
+// extracted from libposteffect.so @ 0x255d4
+// kind: fragment
+
+precision mediump float;                                            uniform sampler2D s_texture0;    uniform mat4 u_mat_yuv2rgb;varying vec2 v_texCoord;                                            vec4 mirror;         vec2 tmp_coord;                                                                            void main()                                                         {                                                                        tmp_coord.y = v_texCoord.y;            if(v_texCoord.x > 0.5)                tmp_coord.x = 1.0 - v_texCoord.x;            else                tmp_coord.x = v_texCoord.x;            mirror = texture2D(s_texture0,tmp_coord);            gl_FragColor = u_mat_yuv2rgb *  mirror;                    return;                                                         }

@@ -1,0 +1,4 @@
+// extracted from libposteffect.so @ 0x1e923
+// kind: fragment
+
+precision mediump float;                uniform sampler2D s_texture0;                varying vec2 v_textureCoord;                                        uniform vec2 u_shift[4];            float Y1,Y2,Y3,Y4;            uniform vec4 u_vec_rgb2y;                                                        void main()                                                            {                                                                          Y1 = dot(u_vec_rgb2y, texture2D(s_texture0, v_textureCoord + u_shift[0]) );              Y2 = dot(u_vec_rgb2y, texture2D(s_texture0, v_textureCoord + u_shift[1]) );              Y3 = dot(u_vec_rgb2y, texture2D(s_texture0, v_textureCoord + u_shift[2]) );              Y4 = dot(u_vec_rgb2y, texture2D(s_texture0, v_textureCoord + u_shift[3]) );              gl_FragColor = vec4 (Y1,Y2,Y3,Y4);          }

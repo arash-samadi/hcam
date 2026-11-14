@@ -1,0 +1,4 @@
+// extracted from libposteffect.so @ 0x24e7c
+// kind: vertex
+
+attribute vec4 a_vertexCoord;                                        attribute vec2 a_textureCoord;                                        attribute vec2 a_globalTexCoord;                                                                                                            varying vec2 v_texCoord;                                            varying vec2 v_globalTexCoord;                                                                                                            void main()                                                         {                                                                        gl_Position = a_vertexCoord;                                        v_texCoord = a_textureCoord;                                        v_globalTexCoord = a_globalTexCoord;                                return;                                                         }

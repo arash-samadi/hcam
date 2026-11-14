@@ -1,0 +1,4 @@
+// extracted from libposteffect.so @ 0x220de
+// kind: fragment
+
+precision mediump float;            uniform sampler2D s_texture0;    uniform mat4 u_mat_yuv2rgb;varying vec2 v_texCoord;            uniform vec2 u_fRadius;                uniform vec2 u_center;                uniform float u_fStrength;            uniform float u_fScreenRatio;        vec4 p;                             vec2 shiftCoord;                    float fWeight;                        void main()                            {                                        p = u_mat_yuv2rgb *  texture2D(s_texture0, v_texCoord);                    shiftCoord = v_texCoord - u_center - 0.5;                shiftCoord.y /= u_fScreenRatio;                            fWeight = smoothstep(u_fRadius.x, u_fRadius.y, length(shiftCoord));            gl_FragColor = p * (1.0 - fWeight);                        return;                                                }
